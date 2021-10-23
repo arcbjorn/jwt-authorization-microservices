@@ -1,15 +1,21 @@
-## JWT generator & parser microservices (authorization)
+## JWT generator & parser microservices
 
-### Install dependencies for api service
+### api service (parsing & validation)
 
 ```shell
+# install dependencies for api service
 cd api && go mod tidy
+
+# run api service
 go run main.go
 ```
 
-### Install dependencies for jwt_creator service
+### jwt_creator service (generation)
 
 ```shell
+# install dependencies for jwt_creator service
 cd jwt_creator && go mod tidy
+
+# run jwt_creator service
 go run main.go
 ```
